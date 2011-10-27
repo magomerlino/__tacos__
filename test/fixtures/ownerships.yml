@@ -6,21 +6,21 @@
 #
 one:
   id: 1
-  starting_date: <%= Time.now %>
+  starting_date: <%= Date.today %>
   figure_id: 1
   unit_id: 1
   type_id: 1
 
 two:
   id: 2
-  starting_date: <%= Time.now %>
+  starting_date: <%= Date.today %>
   figure_id: 2
   unit_id: 2
   type_id: 1
 
 three:
   id: 3
-  starting_date: <%= Time.now %>
+  starting_date: <%= Date.today %>
   figure_id: 3
   unit_id: 1
   type_id: 2

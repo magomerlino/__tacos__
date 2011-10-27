@@ -9,4 +9,6 @@ class Ownership < ActiveRecord::Base
 	validates :unit, :presence => true
 	validates :condominium, :presence => true
 
+	default_scope where("ownerships.starting_date < :now AND (ownerships.ending_date IS NULL OR ownerships.ending_date > :now)", {:now => Time.zone.now})
+
 end
