@@ -19,3 +19,19 @@ two:
     zip_code: '21010'
     city: 'Milano'
     province: 'MI'
+
+three:
+    id: 3
+    name: 'Condominio 3'
+    address: 'Viale delle Regioni, 25'
+    zip_code: '21010'
+    city: 'Milano'
+    province: 'MI'
+    
+four:
+    id: 4
+    name: 'Condominio 4'
+    address: 'Viale Legnano, 3'
+    zip_code: '20015'
+    city: 'Parabiago'
+    province: 'MI'

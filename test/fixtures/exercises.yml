@@ -6,6 +6,30 @@
 #
 one:
   id: 1
-  starting_date: <%= Time.now %>
-  ending_date: <%= Time.now + 1.year %>
+  starting_date: '2011-01-01'
+  ending_date: '2011-12-31'
+  condominium_id: 1
+
+two:
+  id: 2
+  starting_date: '2010-05-01'
+  ending_date: '2011-04-30'
+  condominium_id: 1
+
+three:
+  id: 3
+  starting_date: '2011-05-01'
+  ending_date: '2012-04-30'
+  condominium_id: 1
+
+four:
+  id: 4
+  starting_date: '2011-01-01'
+  ending_date: '2011-12-31'
+  condominium_id: 1
+
+five:
+  id: 5
+  starting_date: '2011-04-01'
+  ending_date: '2011-08-31'
   condominium_id: 1

@@ -6,21 +6,29 @@
 #
 one:
   id: 1
-  starting_date: <%= Date.today %>
+  starting_date: '2008-01-01'
   figure_id: 1
   unit_id: 1
   type_id: 1
 
 two:
   id: 2
-  starting_date: <%= Date.today %>
+  starting_date: '2010-01-01'
+  ending_date: '2011-07-01'
   figure_id: 2
   unit_id: 2
-  type_id: 1
+  type_id: 2
 
 three:
   id: 3
-  starting_date: <%= Date.today %>
+  starting_date: '2011-07-02'
   figure_id: 3
-  unit_id: 1
+  unit_id: 2
   type_id: 2
+
+four:
+  id: 4
+  starting_date: '2011-05-05'
+  figure_id: 4
+  unit_id: 3
+  type_id: 1

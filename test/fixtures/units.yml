@@ -13,3 +13,8 @@ two:
   id: 2
   extension: '2'
   staircase_id: 1
+  
+three:
+  id: 3
+  extension: '3'
+  staircase_id: 1
