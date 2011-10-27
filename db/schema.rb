@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111026114815) do
+ActiveRecord::Schema.define(:version => 20111027135238) do
 
   create_table "checking_accounts", :force => true do |t|
     t.datetime "created_at"
@@ -47,6 +47,21 @@ ActiveRecord::Schema.define(:version => 20111026114815) do
     t.string   "mobile"
     t.string   "fax"
     t.string   "email"
+  end
+
+  create_table "millesimal_charts", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "label",          :null => false
+    t.integer  "condominium_id", :null => false
+  end
+
+  create_table "millesimals", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.float    "value",               :default => 0.0, :null => false
+    t.integer  "millesimal_chart_id",                  :null => false
+    t.integer  "unit_id",                              :null => false
   end
 
   create_table "ownerships", :force => true do |t|

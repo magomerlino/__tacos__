@@ -1,5 +1,6 @@
 class Unit < ActiveRecord::Base
 	has_many :ownerships
+	has_many :ownerships_use, :class_name => 'OwnershipUse'
 	has_many :owners, :class_name => 'Figure', :through => :ownerships,
 		:source => :figure, :conditions => " ownerships.type_id = 1"
 	has_many :tenants, :class_name => 'Figure', :through => :ownerships,
