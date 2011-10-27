@@ -29,3 +29,10 @@ platforms :ruby do
   	gem 'therubyracer'
   end
 end
+
+platforms :mingw_18 do
+  gem 'sqlite3'
+  group :assets do
+  #  gem 'therubyracer'
+  end
+end
